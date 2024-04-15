@@ -6,7 +6,9 @@
 This project utilized the 200$ free credit when signing up with an Microsoft Azure accoutn. The lab involved deploying a windows virtual machine and turning off the firewall and allowing ICMP from the outside world. A custom powershell script was used to create a custom log that was forwarded to Microsoft Sentinel SIEM. The script used metadata from windows events ID 4625, like IP address from the attacker, and sent to a 3rd party API to get geolocation information. The custom logs were ingested by the SIEM and a geolocation attack map was created to display the attack count by Country. 
 
 <h3>Objectives</h3>
-Example description of project
+- <b>Gain hands on experience within Azure environment.</b>
+- <b>Gain experience with Microsoft Sentinel SIEM</b>
+- <b></b> 
 <br />
 
 
