@@ -30,7 +30,7 @@ Step One with image: <br/>
 <br />
 <br />
 Step Two with image:  <br/>
-<img src="https://github.com/Garpieln/ProjectNam/assets/46676876/1995f28f-67be-4d16-b402-59edd6974a7e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="attack-map.png" height="100%" width="100%"/>
 <br />
 <br />
 
