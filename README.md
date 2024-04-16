@@ -31,12 +31,11 @@ This was one of the first lab projects I completed. The main goal here is to get
 <h2>Steps Used</h2>
 
 
-- <b>Create windows vm, turn off firewall and enable ICMP</b>
-- <b>Create and set up log analytics workspace to ingest logs, connect to VM</b>
-- <b>Use powershell script to send IP address into geolocation API, to get back latitude and longitude of IP address; contributing to the custom logs</b>
-- <b>ingest custom logs into Log Analytics Workspace; extract fields from rawdata. (latitude, longitude, username, sourcehost IP, state/provice, Country, timestamp)</b>
-- <b>Query custom log in Azure Sentinel, including sourcehost, and Country. </b>
-
+1. Create windows vm, turn off firewall and enable ICMP</b>
+2. Create and set up log analytics workspace to ingest logs, connect to VM</b>
+3. Use powershell script to send IP address into geolocation API, to get back latitude and longitude of IP address; used in the custom logs</b>
+4. Ingest custom logs into Log Analytics Workspace; extract fields from rawdata. (latitude, longitude, username, sourcehost IP, state/provice, Country, timestamp)</b>
+5. Query custom log in Azure Sentinel, including sourcehost, and Country and plot on world map </b>
 
 <br />
 <div>
@@ -50,13 +49,4 @@ This was one of the first lab projects I completed. The main goal here is to get
 
 ### [Project Reference](https://www.youtube.com/watch?v=RoZeVbbZ0o0)
 
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+Disclaimer: this is not a step by step guide for you to follow, please visit the link above to see the source video and follow along with that. 
