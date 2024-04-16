@@ -8,7 +8,7 @@ This project utilized the 200$ free credit when signing up with an Microsoft Azu
 steps: 
 
 - <b>Create windows vm, turn off firewall and enable ICMP</b>
-- <b>Create and set up log analytics workspace to ingest logs</b>
+- <b>Create and set up log analytics workspace to ingest logs, connect to VM</b>
 - <b>Use ingested logs to create attack map</b>
 - <b>Use powershell script to send IP address into geolocation API, to get back latitude and longitude of IP address; contributing to the custom logs</b>
 
