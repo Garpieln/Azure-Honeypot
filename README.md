@@ -3,26 +3,32 @@
 <h2>Introduction</h2>
 <h3>Overview</h3>
 
-This project utilized the 200$ free credit when signing up with an Microsoft Azure accoutn. The lab involved deploying a windows virtual machine and turning off the firewall and allowing ICMP from the outside world. A custom powershell script was used to create a custom log that was forwarded to Microsoft Sentinel SIEM. The script used metadata from windows events ID 4625, like IP address from the attacker, and sent to a 3rd party API to get geolocation information. The custom logs were ingested by the SIEM and a geolocation attack map was created to display the attack count by Country. 
+This was one of the first lab projects I completed. The main goal here is to get some exposure to a SIEM, get some experience within the azure environment setting up a virtual machine as well as the systems behind the telemetry. As the title says, this project's goal was to create a vulnerable machine and expose it to the internet for attacks to discover and attempt to brute force. Once discovered by ICMP, the attacker can attempt to remotely access the machine likely through RDP and attempt to login to the machine by using common or random usernames/passwords. All of these attempst to login to our machine generates a windows event #4625 for a failed login attempt. We will set a powershell script to pull information from these windows events and send to a 3rd party API to get geolocation data like latitude, longitude, State, Country, etc. From this we create the custom log that is ingested into Microsoft Log Analytics and subsequently quieried by Microsoft Sentinel and plotted on a map.
+
 
 <h3>Objectives</h3>
 
-- <b> Gain hands on experience within Azure environment.</b> 
-- <b> Gain experience with Microsoft Sentinel SIEM</b>
-- <b></b> 
+- <b>Gain hands on experience within Microsoft Azure environment.</b> 
+- <b>Gain experience with Microsoft Sentinel SIEM</b>
+
 <br />
 
 
-<h2>Template Skills Learned</h2>
+<h2>Skills Learned</h2>
 
-- <b> bulleted Subheading</b> 
+- <b>Learned how to use powershell to forward logs to a 3rd party api and generate a custom log</b> 
+- <b>Learned how to query a custom log with KQL within Microsoft Sentinel</b>
+- <b>Learned how to extract fields from a custom log and create a attack map</b>
 
+<h2>tools Used</h2>
 
-<h2>Template tools Used</h2>
+- <b>Microsoft Azure Sentinel</b>
+- <b>Microsoft Analytics Workspace</b>
+- <b>Powershell</b>
+- <b>Virtual Machines</b>
+- <b>KQL</b>
 
-- <b>bulleted subheading</b>
-
-<h2>Template Steps Used</h2>
+<h2>Steps Used</h2>
 
 
 - <b>Create windows vm, turn off firewall and enable ICMP</b>
